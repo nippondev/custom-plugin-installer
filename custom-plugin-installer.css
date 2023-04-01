@@ -1,0 +1,78 @@
+.plugin-card {
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Add this line to space the elements evenly */
+    width: 300px; /* Add this line to set a fixed width */
+    height: 250px; /* Add this line to set a fixed height */
+    box-sizing: border-box; /* Add this line to include padding and border in the total width and height */
+
+}
+
+.plugin-card h3 {
+    margin-top: 0;
+}
+
+.plugin-card button {
+    background-color: #007cba;
+    border: none;
+    border-radius: 3px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 14px;
+    padding: 6px 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+}
+
+
+.install-button {
+    background-color: #0073aa;
+    color: #fff;
+}
+
+.activate-button {
+    background-color: #46b450;
+    color: #fff;
+}
+
+.installed-button {
+    background-color: #888;
+    color: #fff;
+}
+
+div.custom-notification {
+    position: fixed;
+    width: 300px;
+    top: 50px;
+    right: 0;
+    padding: 15px;
+    margin: 0;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+    color: #fff;
+    font-size: 18px;
+    z-index: 1000;
+    opacity: 1;
+    transition: opacity 0.3s;
+}
+
+.custom-notification.fade-out {
+    opacity: 1;
+}
+
+.custom-notification.info {
+    background-color: #007cba;
+}
+
+.custom-notification.error {
+    background-color: #ea4e2c2d;
+    border: 1px solid #ea4e2c7c;
+    color: #5d6672;
+}
